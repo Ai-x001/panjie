@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盘界 · 项目导航聚合平台</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== 导航栏 ===== -->
+<nav class="navbar">
+  <div class="navbar-brand">
+    <span>💰</span> 盘界
+  </div>
+  <div class="navbar-links">
+    <a href="#" class="active" data-page="home">首页</a>
+    <a href="#" data-page="submit">提交项目</a>
+    <a href="#" data-page="admin">管理后台</a>
+  </div>
+  <div class="navbar-actions">
+    <button class="btn btn-gold btn-sm" onclick="showPage('submit')">📤 提交项目 赚20元</button>
+  </div>
+</nav>
+
+<!-- ===== 提示条 ===== -->
+<div class="toast" id="toast"></div>
+
+<!-- ===== 页面容器 ===== -->
+<div class="main">
+
+  <!-- ====== 首页 ====== -->
+  <div class="page active" id="page-home"></div>
+
+  <!-- ====== 详情页 ====== -->
+  <div class="page" id="page-detail"></div>
+
+  <!-- ====== 提交页 ====== -->
+  <div class="page" id="page-submit"></div>
+
+  <!-- ====== 管理页 ====== -->
+  <div class="page" id="page-admin"></div>
+
+</div>
+
+<!-- ===== 页脚 ===== -->
+<div class="footer">
+  © 2026 盘界 · 项目导航聚合平台 — 仅供信息展示，不构成投资建议
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
